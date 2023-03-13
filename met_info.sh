@@ -45,6 +45,11 @@ submenu(){
         ;;
         4)
             readInfo
+            echo " "
+            echo "Ingresa 1 para regresar al menú"
+            echo "Cualquier otra para finalizar"
+            read par
+            continue $par
         ;;
         5)
             exit 0
@@ -54,6 +59,17 @@ submenu(){
         ;;
     esac
     
+}
+
+continue(){
+    op=$1
+    if [ $op -eq 1 ]; then
+        submenu
+    else
+        echo "Fin del programa."
+        exit 0
+    fi
+
 }
 
 #caso donde no se reciba un parámetro válido
