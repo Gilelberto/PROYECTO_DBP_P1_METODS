@@ -5,7 +5,12 @@ section=""
 route="./"
 
 addInfo() {
-    echo "add"
+    echo "¿Cuál es el nombre del concepto?"
+    read concept
+    echo "Por favor, ingrese la información relacionada al concepto $concept."
+    read info
+    echo "[$concept].- $info." >> $route
+    echo "Añadido correctamente"
 }
 search() {
     echo "search"
@@ -24,7 +29,8 @@ submenu(){
             1.- Agregar información
             2.- Buscar
             3.- Eliminar información
-            4.- Leer base de información."
+            4.- Leer base de información.
+            5.- Salir"
     read aux
     case $aux in
         1)
@@ -39,6 +45,9 @@ submenu(){
         ;;
         4)
             readInfo
+        ;;
+        5)
+            exit 0
         ;;
         *)
             echo "Opción no válida"
