@@ -13,7 +13,9 @@ addInfo() {
     echo "Añadido correctamente"
 }
 search() {
-    echo "search"
+    echo "Ingrese el concepto a buscar"
+    read aux
+    grep -wi "[$aux]" $route
 }
 deleteInfo() {
     echo "delete"
