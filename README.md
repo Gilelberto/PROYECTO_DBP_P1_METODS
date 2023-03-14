@@ -15,8 +15,7 @@ PRERREQUISITOS:
 *Ser ejecutado desde una terminal 
 
 INSTALACION:
-
-.....................DESPUES QPDOOOO........................
+En caso de utilizar la imagen de docker, ejecutar el comando docker run -ti nombreDeLaImagen {parametro -a o -t}
 
 HECHO CON:
 *Bash
@@ -26,12 +25,12 @@ CONTRIBUCIONES:
 NO SE ACEPTAN CONTRIBUCIONES EXTERNAS DEBIDO A QUE ES UN PROYECTO ESCOLAR :(
 
 VERSION:
-1.0.0
+1.0.1 (la q si jala)
 
 AUTORES:
 Gilberto Contreras Conn 348503
 Sofía González Lechuga 348451
-Mauricio Ramirez Ruíz no c
+Mauricio Ramirez Ruíz 348705
 
 LICENCIA:
 0 no sabemos plis no copien xd
