@@ -18,7 +18,10 @@ search() {
     grep -wi "[$aux]" $route
 }
 deleteInfo() {
-    echo "delete"
+    echo "Concepto a eliminar: "
+    read concept
+    sed -i "/\[$concept\]/d" $route
+    echo "El concepto $concept fue borrado"
 }
 readInfo() {
     cat $route
